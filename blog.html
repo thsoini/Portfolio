@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Oops! We're fixing things...</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, sans-serif;
+      background: #0d0d0d;
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+    .wrapper {
+      max-width: 600px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.2rem;
+      color: #bbb;
+      margin-bottom: 20px;
+    }
+    .emoji {
+      font-size: 4rem;
+      margin-bottom: 20px;
+      animation: wiggle 1.5s infinite ease-in-out;
+      display: inline-block;
+    }
+    @keyframes wiggle {
+      0%, 100% { transform: rotate(-10deg); }
+      50% { transform: rotate(10deg); }
+    }
+    .button {
+      background: #ff4081;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: background 0.3s;
+    }
+    .button:hover {
+      background: #f50057;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="emoji">🛠️🤖🔥</div>
+    <h1>We broke it... but we're fixing it!</h1>
+    <p>Our team of highly trained squirrels is currently upgrading the site. <br>
+    Please hold on while they stop arguing over the Wi‑Fi password.</p>
+    <a href="index.html" class="button">Go Back to Home</a>
+  </div>
+</body>
+</html>

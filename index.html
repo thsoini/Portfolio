@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.tommysoini.fi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+            </ul>
+        </nav>
+        <!-- Teemanvaihtonappi -->
+        <button id="theme-toggle">🌙</button>
+    </header>
+
+    <section id="about">
+         <div class="project">
+            <img src="oma.PNG" alt="kuva" class="photo">
+            <h2>TOMMY SOINI - IT STUDENT </h2>
+
+            <h3> Who am I?</h3>
+            <p>My name is Tommy Soini, I’m 26 years old and based in Vantaa, Finland. I’m currently studying for a BBA in Information Technology at Haaga-Helia University of Applied Sciences, specializing in infrastructure and cybersecurity. </p>
+            
+            <h3> Why IT?</h3>
+            <p> Since I was a kid, I’ve enjoyed modifying and improving things. I’ve always wanted to be able to fix and understand systems myself, whether it’s computers or cars. Before starting my IT degree, my skills included building custom PCs, installing Windows operating systems, configuring BIOS settings, and even overclocking hardware. </p>
+
+            <p> Gaming especially playing Counter-Strike also taught me a lot about using the command line and Linux terminal. For example, connecting to specific servers often required commands like connect [ip.address], which sparked my interest in how systems really work under the hood. </p>
+
+            <h3>Goals and Interests</h3>
+            <p> I’m passionate about cloud infrastructure and cybersecurity. My goal is to build a career where I can design secure, scalable systems and continuously learn about emerging technologies in IT. I’m especially motivated by challenges that require both technical problem-solving and creative thinking. </p>
+            
+            <div class="socials">
+  <a href="https://github.com/thsoini" target="_blank">
+    <i class="fa-brands fa-github"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/tommy-soini-99792118a/" target="_blank">
+    <i class="fa-brands fa-linkedin"></i>
+  </a>
+<a href="https://open.spotify.com/user/tommysoini" target="_blank">
+  <i class="fa-brands fa-spotify"></i>
+</a>
+
+</div>
+
+
+         </div>
+    </section>
+
+    <section id="projects">
+        <h2>PROJECTS</h2>
+
+        <a href="https://github.com/thsoini/linux-course" class="project-link" target="_blank"  rel="noopener noreferrer">  
+            <div class="project">
+                <h3>Linux Course</h3>
+                <p>Homework reports (in Finnish).</p>
+                
+            </div>
+        </a>
+
+        <a href="https://github.com/thsoini/Projekti/blob/main/monitori-salstack.md" class="project-link" target="_blank"  rel="noopener noreferrer">  
+            <div class="project">
+                <h3>SaltStack Monitor</h3>
+                <p>Implemented a monitoring stack with Prometheus, Node Exporter, and Grafana, using SaltStack for automated, repeatable deployment and configuration.</p>
+                <p>(in Finnish)</p>
+            </div>
+        </a>
+
+        <a href="https://github.com/thsoini/Projekti/blob/main/spotfy%2Bweatherapi%2Bflask.md" class="project-link" target="_blank"  rel="noopener noreferrer">  
+            <div class="project">
+                <h3>spotify+weatherapi+flask</h3>
+                <p>Implemented a monitoring stack with Prometheus, Node Exporter, and Grafana, using SaltStack for automated, repeatable deployment and configuration.</p>
+                <p>(in Finnish)</p>
+            </div>
+        </a>
+
+    </section>
+
+    <section id="rest">
+        <h2>EDUCATION</h2>
+
+        <a>
+         <div class="project">
+            <h3> Haaga-Helia University of Applied Science (Ongoing) </h3>
+            <p> - Bachelor of Business Administration (BBA), Business Information Technology </p>
+            <p> - specialization in infrastructure, cloud services, and cybersecurity. </p>
+         </div>
+        </a>
+
+        <a>
+         <div class="project">
+            <h3>MERCURIA Business College </h3>
+            <p> - Vocational Qualification in Business and Administration – specialization in Customer Service, Technical Sales, and International Trade.</p>
+            <p> - Technical Sales studies – completed at VARIA (Vantaa Vocational College).</p>
+            <p> - Vocational Qualification in Automotive and Logistics – foundation in technical problem-solving and practical work.</p>
+         </div>
+        </a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p> firstname.lastname@outlook.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Tommy Soini</p>
+    </footer>
+
+    
+    <script>
+      const root = document.documentElement;
+      const toggleBtn = document.getElementById('theme-toggle');
+      const STORAGE_KEY = 'site-theme';
+
+      function applyTheme(theme) {
+        if (theme === 'dark') {
+          root.setAttribute('data-theme', 'dark');
+          toggleBtn.textContent = '☾☀︎';
+        } else {
+          root.removeAttribute('data-theme');
+          toggleBtn.textContent = '☾☀︎';
+        }
+      }
+
+      function getInitialTheme() {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) return saved;
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+
+      function toggleTheme() {
+        const current = root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+        const next = current === 'dark' ? 'light' : 'dark';
+        applyTheme(next);
+        localStorage.setItem(STORAGE_KEY, next);
+      }
+
+      // Alustus
+      applyTheme(getInitialTheme());
+      toggleBtn.addEventListener('click', toggleTheme);
+    </script>
+</body>
+</html>
