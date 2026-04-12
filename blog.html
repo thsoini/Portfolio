@@ -1,66 +1,179 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Oops! We're fixing things...</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: Inter, system-ui, sans-serif;
-      background: #0d0d0d;
-      color: #fff;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 20px;
-    }
-    .wrapper {
-      max-width: 600px;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 1.2rem;
-      color: #bbb;
-      margin-bottom: 20px;
-    }
-    .emoji {
-      font-size: 4rem;
-      margin-bottom: 20px;
-      animation: wiggle 1.5s infinite ease-in-out;
-      display: inline-block;
-    }
-    @keyframes wiggle {
-      0%, 100% { transform: rotate(-10deg); }
-      50% { transform: rotate(10deg); }
-    }
-    .button {
-      background: #ff4081;
-      color: #fff;
-      padding: 12px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 700;
-      transition: background 0.3s;
-    }
-    .button:hover {
-      background: #f50057;
-    }
-  </style>
-</head>
-<body>
-  <div class="wrapper">
-    <div class="emoji">🛠️🤖🔥</div>
-    <h1>We broke it... but we're fixing it!</h1>
-    <p>Our team of highly trained squirrels is currently upgrading the site. <br>
-    Please hold on while they stop arguing over the Wi‑Fi password.</p>
-    <a href="index.html" class="button">Go Back to Home</a>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tommysoini.com</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+
+    <!-- Navigation -->
+    <nav>
+      <div class="nav-content">
+        <span class="logo">&lt;tommysoini.com/&gt;</span>
+        <ul class="nav-links">
+          <li><a href="index.html">Frontpage</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="blog">
+      <div class="container">
+        <div>
+          <h2 class="section-title">Latest Posts</h2>
+          <p class="section-subtitle">Thoughts</p>
+        </div>
+
+        <div class="blog-grid">
+
+          <article class="blog-card"
+            tabindex="0"
+            role="button"
+            aria-label="Read: Header"
+            data-title="Header"
+            data-date="March 15, 2026"
+            data-read="5 min read"
+            data-tags="tag,tag,tag"
+            data-content="<p>Your full post content goes here. Replace this with the actual text of your first blog post.</p><p>You can include multiple paragraphs, and even basic HTML like <strong>bold</strong> or <em>italic</em> text.</p>">
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span>
+                  <svg class="icon-xs" style="display:inline;vertical-align:text-bottom" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  March 15, 2026
+                </span>
+                <span>•</span>
+                <span>5 min read</span>
+              </div>
+              <h3>Header</h3>
+              <p class="blog-excerpt">Text</p>
+              <div class="blog-tags">
+                <span class="blog-tag">tag</span>
+                <span class="blog-tag">tag</span>
+                <span class="blog-tag">tag</span>
+              </div>
+              <a href="#" class="read-more">
+                Read more
+                <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="blog-card"
+            tabindex="0"
+            role="button"
+            aria-label="Read: Header"
+            data-title="Header"
+            data-date="February 28, 2026"
+            data-read="8 min read"
+            data-tags="tag,tag,tag"
+            data-content="<p>Your full post content goes here. Replace this with the actual text of your second blog post.</p><p>Add as many paragraphs as you need.</p>">
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span>
+                  <svg class="icon-xs" style="display:inline;vertical-align:text-bottom" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  February 28, 2026
+                </span>
+                <span>•</span>
+                <span>8 min read</span>
+              </div>
+              <h3>Header</h3>
+              <p class="blog-excerpt">text</p>
+              <div class="blog-tags">
+                <span class="blog-tag">tag</span>
+                <span class="blog-tag">tag</span>
+                <span class="blog-tag">tag</span>
+              </div>
+              <a href="#" class="read-more">
+                Read more
+                <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="blog-card"
+            tabindex="0"
+            role="button"
+            aria-label="Read: Header"
+            data-title="Header"
+            data-date="January 20, 2026"
+            data-read="10 min read"
+            data-tags="tag,tag,tag"
+            data-content="<p>Your full post content goes here. Replace this with the actual text of your third blog post.</p><p>Add as many paragraphs as you need.</p>">
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span>
+                  <svg class="icon-xs" style="display:inline;vertical-align:text-bottom" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  January 20, 2026
+                </span>
+                <span>•</span>
+                <span>10 min read</span>
+              </div>
+              <h3>Header</h3>
+              <p class="blog-excerpt">text</p>
+              <div class="blog-tags">
+                <span class="blog-tag">tag</span>
+                <span class="blog-tag">tag</span>
+                <span class="blog-tag">tag</span>
+              </div>
+              <a href="#" class="read-more">
+                Read more
+                <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Overlay -->
+    <div class="overlay-backdrop" id="overlayBackdrop" role="dialog" aria-modal="true" aria-labelledby="overlayTitle">
+      <div class="overlay-panel" id="overlayPanel">
+        <div class="overlay-body">
+          <div class="overlay-top-row">
+            <h2 class="overlay-title" id="overlayTitle"></h2>
+            <button class="overlay-close" id="overlayClose" aria-label="Close post">✕</button>
+          </div>
+          <div class="overlay-meta-row" id="overlayMeta"></div>
+          <div class="overlay-tags" id="overlayTags"></div>
+          <hr class="overlay-divider" />
+          <div class="overlay-content" id="overlayContent"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>© 2025 Tommy Soini</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>

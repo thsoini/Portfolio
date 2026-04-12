@@ -1,228 +1,430 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tommy Soini</title>
-    <link rel="icon" type="image/png" href="ts.png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tommysoini.com</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="nav-content">
+        <span class="logo">&lt;tommysoini.com/&gt;</span>
+        <ul class="nav-links">
+          <li><a href="portfolio.html">Frontpage</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+    </nav>
 
-</head>
-
-
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="blog.html">BLOG</a></li>
-            </ul>
-        </nav>
-        <!-- Teemanvaihtonappi -->
-        <button id="theme-toggle">🌙</button>
-    </header>
-
-    <section id="about">
-         <div class="project">
-            <img src="oma.PNG" alt="kuva" class="photo">
-            <h2>TOMMY SOINI - IT STUDENT </h2>
-            
-            <h3> Who am I?</h3>
-            <p>My name is Tommy Soini, I’m 26 years old and based in Vantaa, Finland. I’m currently studying for a BBA in Information Technology at Haaga-Helia University of Applied Sciences, specializing in infrastructure and cybersecurity. </p>
-            
-            <h3> Why IT?</h3>
-            <p> Since I was a kid, I’ve enjoyed modifying and improving things. I’ve always wanted to be able to fix and understand systems myself, whether it’s computers or cars. Before starting my IT degree, my skills included building custom PCs, installing Windows operating systems, configuring BIOS settings, and even overclocking hardware. </p>
-
-            <p> Gaming especially playing Counter-Strike also taught me a lot about using the command line and Linux terminal. For example, connecting to specific servers often required commands like connect [ip.address], which sparked my interest in how systems really work under the hood. </p>
-
-            <h3>Goals and Interests</h3>
-            <p> I’m passionate about cloud infrastructure and cybersecurity. My goal is to build a career where I can design secure, scalable systems and continuously learn about emerging technologies in IT. I’m especially motivated by challenges that require both technical problem solving and creative thinking. </p>
-            
-            <div class="socials">
-  <a href="https://github.com/thsoini" target="_blank">
-    <i class="fa-brands fa-github"></i>
-  </a>
-  <a href="https://www.linkedin.com/in/tommy-soini-99792118a/" target="_blank">
-    <i class="fa-brands fa-linkedin"></i>
-  </a>
-<a href="https://open.spotify.com/user/tommysoini" target="_blank">
-  <i class="fa-brands fa-spotify"></i>
-</a>
-
-</div>
-
-
-         </div>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <p class="hero-intro">Hi, my name is</p>
+            <h1>Tommy Soini</h1>
+            <h2>IT Student</h2>
+            <p class="hero-description">
+              I am a 27-year-old BBA candidate specializing in the backbone of
+              modern business: secure infrastructure. Based in Vantaa, I’m
+              currently honing my skills at Haaga-Helia, where I bridge the gap
+              between technical resilience and business strategy. My focus lies
+              in building robust systems and defending them against an evolving
+              threat landscape.
+            </p>
+            <p class="hero-description">
+              Since I was a kid, I’ve enjoyed modifying and improving things.
+              I’ve always wanted to be able to fix and understand systems
+              myself, whether it’s computers or cars. Before starting my IT
+              degree, my skills included building custom PCs, installing Windows
+              operating systems, configuring BIOS settings, and even
+              overclocking hardware. Gaming especially playing Counter-Strike
+              also taught me a lot about using the command line and Linux
+              terminal. For example, connecting to specific servers often
+              required commands like connect [ip.address], which sparked my
+              interest in how systems really work under the hood.
+            </p>
+            <div class="button-group">
+              <a href="#contact" class="btn btn-primary">Get in touch</a>
+              <a href="#projects" class="btn btn-secondary">View work</a>
+            </div>
+            <div class="social-links">
+              <a href="https://github.com/thsoini" target="_blank">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                  ></path>
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/in/tommysoini/" target="_blank">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                  ></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="profile-image-wrapper">
+            <div class="profile-glow"></div>
+            <img src="kuvat/kuva.png" alt="Tommy Soini" class="profile-image" />
+          </div>
+        </div>
+      </div>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects">
-        <h2>PROJECTS</h2>
+      <div class="container">
+        <div>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">
+            A selection of my recent work and side projects
+          </p>
+        </div>
 
-        <a href="https://github.com/thsoini/linux-course" class="project-link" target="_blank"  rel="noopener noreferrer">  
-            <div class="project">
-                <h3>Linux Course</h3>
-                <p>Homework reports.</p>
-                <p>(in Finnish)</p>
-                
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project">
+            <div class="project-image-wrapper">
+              <a
+                href="https://github.com/thsoini/Projekti/blob/main/monitori-salstack.md"
+              >
+                <img
+                  src="kuvat/saltstack.png"
+                  alt="SaltStack"
+                  class="project-image"
+                />
+                <div class="project-overlay"></div>
+              </a>
             </div>
-        </a>
-
-        <a href="https://github.com/thsoini/Projekti/blob/main/monitori-salstack.md" class="project-link" target="_blank"  rel="noopener noreferrer">  
-            <div class="project">
-                <h3>SaltStack Monitor</h3>
-                <p>Implemented a monitoring stack with Prometheus, Node Exporter, and Grafana, using SaltStack for automated, repeatable deployment and configuration.</p>
-                <p>(in Finnish)</p>
+            <div class="project-content">
+              <p class="project-label">Featured Project</p>
+              <h3>SaltStack Monitor</h3>
+              <p class="project-description">
+                Implemented a monitoring stack with Prometheus, Node Exporter,
+                and Grafana, using SaltStack for automated, repeatable
+                deployment and configuration.
+              </p>
+              <div class="tech-stack">
+                <span class="tech-tag">Prometheus</span>
+                <span class="tech-tag">Node Exporter</span>
+                <span class="tech-tag">Grafana</span>
+                <span class="tech-tag">SaltStack</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/thsoini/Projekti/blob/main/monitori-salstack.md"
+                  class="project-link"
+                >
+                  <svg class="icon-sm" viewBox="0 0 24 24">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    ></path>
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
             </div>
-        </a>
+          </article>
 
-        <a href="https://github.com/thsoini/Projekti/blob/main/spotfy%2Bweatherapi%2Bflask.md" class="project-link" target="_blank"  rel="noopener noreferrer">  
-            <div class="project">
-                <h3>spotify+weatherapi+flask</h3>
-                <p>Implemented a monitoring stack with Prometheus, Node Exporter, and Grafana, using SaltStack for automated, repeatable deployment and configuration.</p>
-                <p>(in Finnish)</p>
+          <!-- Project 2 -->
+          <article class="project">
+            <div class="project-image-wrapper">
+              <a
+                href="https://github.com/thsoini/Projekti/blob/main/spotfy%2Bweatherapi%2Bflask.md"
+              >
+                <img
+                  src="kuvat/spotifyprokkis.png"
+                  alt="Spotifyproject"
+                  class="project-image"
+                />
+                <div class="project-overlay"></div>
+              </a>
             </div>
-        </a>
+            <div class="project-content">
+              <p class="project-label">Featured Project</p>
+              <h3>Spotify+Weatherapi+Flask</h3>
+              <p class="project-description">
+                Implemented a monitoring stack with Prometheus, Node Exporter,
+                and Grafana, using SaltStack for automated, repeatable
+                deployment and configuration.
+              </p>
+              <div class="tech-stack">
+                <span class="tech-tag">Prometheus</span>
+                <span class="tech-tag">Node Exporter</span>
+                <span class="tech-tag">Grafana</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/thsoini/Projekti/blob/main/spotfy%2Bweatherapi%2Bflask.md"
+                  class="project-link"
+                >
+                  <svg class="icon-sm" viewBox="0 0 24 24">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    ></path>
+                  </svg>
+                  <span>Github</span>
+                </a>
+              </div>
+            </div>
+          </article>
 
+          <!-- Project 3 -->
+          <article class="project">
+            <div class="project-image-wrapper">
+              <a href="https://github.com/thsoini/linux-course">
+                <img
+                  src="kuvat/linux.png"
+                  alt="Linux"
+                  class="project-image"
+                />
+                <div class="project-overlay"></div>
+              </a>
+            </div>
+            <div class="project-content">
+              <p class="project-label">Featured Project</p>
+              <h3>Linux Course</h3>
+              <p class="project-description">Homework</p>
+              <div class="tech-stack">
+                <span class="tech-tag">Linux</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/thsoini/linux-course"
+                  class="project-link"
+                >
+                  <svg class="icon-sm" viewBox="0 0 24 24">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                    ></path>
+                  </svg>
+                  <span>Github</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
-<section id="rest">
-    <h2>EDUCATION</h2>
-
-    <a>
-        <div class="project">
-            <h3>Haaga-Helia University of Applied Science (Ongoing)</h3>
-            <ul>
-                <li>Bachelor of Business Administration (BBA), Business Information Technology</li>
-                <li>Specialization in infrastructure, cloud services, and cybersecurity</li>
-            </ul>
+    <section id="skills" class="bg-dark">
+      <div class="container">
+        <div>
+          <h2 class="section-title">Skills</h2>
+          <p class="section-subtitle">Technologies and tools I work with</p>
         </div>
-    </a>
 
-    <a>
-        <div class="project">
-            <h3>MERCURIA Business College</h3>
-            <ul>
-                <li>Vocational Qualification in Business and Administration – specialization in Customer Service, Technical Sales, and International Trade</li>
-                <li>Technical Sales studies – completed at VARIA (Vantaa Vocational College)</li>
-                <li>Vocational Qualification in Automotive and Logistics – foundation in technical problem-solving and practical work</li>
-            </ul>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-header">
+              <svg
+                class="skill-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+              <h3>Hardware & Support</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">PC Building & Upgrading</span>
+              <span class="skill-tag">BIOS/Firmware Updates</span>
+              <span class="skill-tag">Android & iOS</span>
+              <span class="skill-tag">Network Basics & IP</span>
+              <span class="skill-tag">Printer Troubleshooting</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-header">
+              <svg
+                class="skill-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="12" y1="3" x2="12" y2="21"></line>
+              </svg>
+              <h3>Windows & Server</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Windows Environment</span>
+              <span class="skill-tag">CMD & PowerShell</span>
+              <span class="skill-tag">Windows Server (Azure Labs)</span>
+              <span class="skill-tag">Active Directory Domains</span>
+              <span class="skill-tag">Device Manager</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-header">
+              <svg
+                class="skill-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+              <h3>Linux & DevOps</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Linux CLI</span>
+              <span class="skill-tag">Vagrant</span>
+              <span class="skill-tag">SaltStack</span>
+              <span class="skill-tag">Prometheus Monitoring</span>
+              <span class="skill-tag">Samba Server</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-header">
+              <svg
+                class="skill-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+              <h3>Coding & Excel</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">Excel VBA & Macros</span>
+              <span class="skill-tag">Pivot Tables (XLOOKUP)</span>
+              <span class="skill-tag">Interactive Dashboards</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-header">
+              <svg
+                class="skill-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                <path d="M2 17l10 5 10-5"></path>
+                <path d="M2 12l10 5 10-5"></path>
+              </svg>
+              <h3>Cloud & Collaboration</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">SharePoint & Teams</span>
+              <span class="skill-tag">OneDrive</span>
+              <span class="skill-tag">O365 (Sway, Forms)</span>
+              <span class="skill-tag">Viva Engage</span>
+              <span class="skill-tag">OneNote</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-header">
+              <svg
+                class="skill-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+              <h3>Personal & Interests</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">DJing (BPM & Mixing)</span>
+              <span class="skill-tag">Weightlifting</span>
+            </div>
+          </div>
         </div>
-    </a>
-</section>
-
-    <section id="rest">
-
-          <h2>SKILLS</h2>
-
-        <a>
-<div class="project">
-    <h3>General Knowledge</h3>
-    <ul>
-        <li>Practical PC hardware experience: building custom computers, upgrading and replacing components, installing operating systems, configuring BIOS settings, and performing driver/firmware updates for GPUs and CPUs</li>
-        <li>Familiar with Android and iOS devices</li>
-        <li>Basic knowledge of printers: able to use and connect them to a network</li>
-        <li>Familiar with computer network basics, including network types, IP addressing, connectivity, and basic troubleshooting </li>
-    </ul>
-
-    <h3>Windows</h3>
-    <ul>
-        <li>Proficient with Windows environment</li>
-        <li>Familiar with Command Prompt (CMD) and PowerShell</li>
-        <li>Experienced in Device Manager and file system operations (e.g., creating and managing folders)</li>
-    </ul>
-
-    <h3>Windows Server</h3>
-    <ul>
-        <li>Completed a course on Windows domain environments (Azure Labs), including virtual networks, servers, workstations, and domain management</li>
-    </ul>
-      <h3>Linux & Server Skills</h3>
-        <ul>
-        <li>Linux command line: file and user management, basic commands</li>
-        <li>Server and configuration management: Vagrant (master/slave setup), SaltStack (pkg/service, inits.sls)</li>
-        <li>Samba server setup and file sharing</li>
-        <li>Monitoring Linux services with Prometheus</li>
-        </ul>
-        <h3>Programming / Coding Skills</h3>
-                <ul>
-            <li>Basic knowledge of Java: syntax, variables, loops, and simple programs</li>
-            <li>Basic knowledge of Python: syntax, data types, loops, and simple scripts</li>
-        </ul>
-
-
-        <h3>O365</h3>
-                <ul>
-        <li>Experienced with Sway, Forms, Viva Engage, OneNote, SharePoint, Teams, and OneDrive.
-Skilled in collaboration, document sharing, and communication across Microsoft’s cloud ecosystem.</li>
-        
-        </ul>
-
-        <h3>EXCEL</h3>
-        <ul>
-            <li> Time calculations and data rounding  </li>
-            <li> Pivot tables and lookup functions (VLOOKUP, HLOOKUP, XLOOKUP)  </li>
-            <li> Form controls and interactive dashboards  </li>
-            <li> Macro recording and VBA scripting for task automation </li>
-            <li> Creating structured reports and summaries  </li>
-        </ul>
-
-
-        <h3>Other</h3>
-        <ul>
-        <li>Experience in DJing: mixing tracks according to BPM and music genres</li>
-        <li>Weightlifting: Squat 190kg, Deadlift 210kg, Bench Press 140kg</li>
-        </ul>
-</div>
-
-</section>
-
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p> firstname.lastname@outlook.com</p>
+      </div>
     </section>
 
+    <!-- Education Section -->
+    <section class="bg-dark">
+      <div class="container-md">
+        <div>
+          <h2 class="section-title">Education</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Present</div>
+          <h3>BBA in Information Technology</h3>
+          <p class="timeline-school">
+            Haaga-Helia University of Applied Sciences
+          </p>
+          <ul>
+            <li>
+              • Specialization in Infrastructure, Cloud Services, and
+              Cybersecurity
+            </li>
+          </ul>
+          <div class="timeline-date">2015-2018</div>
+          <h3>Vocational Qualification in Business Management</h3>
+          <p class="timeline-school">Mercuria Business School</p>
+          <ul>
+            <li>
+              • Specialization in Customer Service, Technical Sales, and
+              International Trade
+            </li>
+            <li>
+              • Technical Sales studies completed at VARIA (Vantaa Vocational
+              College)
+            </li>
+            <li>
+              • Vocational Qualification in Automotive and Logistics –
+              foundation in technical problem-solving and practical work
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p>
+          I'm currently looking for internship opportunities and always open to
+          discussing new projects or collaborations.
+        </p>
+        <a href="mailto:tommy.soini@outlook.com" class="btn btn-primary"
+          >Contact Via Email</a
+        >
+      </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Tommy Soini</p>
+      <div class="container">
+        <p>© 2025 Tommy Soini</p>
+      </div>
     </footer>
-
-    
-    <script>
-      const root = document.documentElement;
-      const toggleBtn = document.getElementById('theme-toggle');
-      const STORAGE_KEY = 'site-theme';
-
-      function applyTheme(theme) {
-        if (theme === 'dark') {
-          root.setAttribute('data-theme', 'dark');
-          toggleBtn.textContent = '☾☀︎';
-        } else {
-          root.removeAttribute('data-theme');
-          toggleBtn.textContent = '☾☀︎';
-        }
-      }
-
-      function getInitialTheme() {
-        const saved = localStorage.getItem(STORAGE_KEY);
-        if (saved) return saved;
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      }
-
-      function toggleTheme() {
-        const current = root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
-        const next = current === 'dark' ? 'light' : 'dark';
-        applyTheme(next);
-        localStorage.setItem(STORAGE_KEY, next);
-      }
-
-      // Alustus
-      applyTheme(getInitialTheme());
-      toggleBtn.addEventListener('click', toggleTheme);
-    </script>
-</body>
+  </body>
 </html>
-
-
-
-
