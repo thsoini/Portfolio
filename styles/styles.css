@@ -449,6 +449,7 @@
             margin-bottom: 1rem;
             display: -webkit-box;
             -webkit-line-clamp: 3;
+            line-clamp: 3;
             -webkit-box-orient: vertical;
             overflow: hidden;
         }
@@ -677,6 +678,37 @@
       /* Make cards feel clickable */
       .blog-card { cursor: pointer; }
       .blog-card .read-more { pointer-events: none; }
+     
+      .doc-processing {
+            position: relative;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            color: #666;
+            font-size: 14px;
+            overflow: hidden;
+            margin-top: 10px;
+            }
+
+            .scanline {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 20%;
+            background: linear-gradient(
+                to right,
+                transparent,
+                rgba(0, 150, 255, 0.2),
+                transparent
+            );
+            animation: scan 1.5s linear infinite;
+            }
+
+            @keyframes scan {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(300%); }
+            }
 
 
 
