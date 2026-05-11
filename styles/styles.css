@@ -710,6 +710,19 @@
             100% { transform: translateX(300%); }
             }
 
+            .modal-image {
+            width: 100%;
+            border-radius: 8px;
+            margin: 16px 0;
+            object-fit: cover;
+            }
+
+            
+
+
+
+
+
 
 
 
