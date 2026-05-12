@@ -8,7 +8,7 @@ function openPost(card) {
   overlayContent.innerHTML = card.dataset.content;
 
   // ⭐ Lisää kaikki kuvat modalin sisään (uusi osa)
-  const images = card.dataset.images?.split(',').map(i => i.trim()) || [];
+  const images = card.dataset.images?.split(',').map(i => i.trim()).filter(Boolean) || [];
   images.forEach(src => {
     overlayContent.innerHTML += `<img src="${src}" class="modal-image">`;
   });
@@ -53,5 +53,3 @@ document.querySelectorAll('.blog-card').forEach(card => {
 document.getElementById('overlayClose').addEventListener('click', closeOverlay);
 backdrop.addEventListener('click', e => { if (e.target === backdrop) closeOverlay(); });
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeOverlay(); });
-
-
